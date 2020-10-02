@@ -1,0 +1,16 @@
+<div class="todo-container">
+    <h2>This page will populate Todos</h2>
+    {{#each @model as |todo|}}
+    <div class="todo">
+        <div>{{todo.id}}</div>
+        <div>{{todo.title}}</div>
+        {{#if todo.todoItems}}
+            <br/>
+            <div class="todo-item-title">Todo Items:</div>
+                {{#each todo.todoItems as |todoItems|}}
+            <div class="todo-item">{{todoItems.content}}</div>
+            {{/each}}
+        {{/if}}
+    </div>
+    {{/each}}
+</div>
