@@ -8,6 +8,6 @@ export default class Router extends EmberRouter {
 
 Router.map(function() {
   this.route('index', { path: "/" })
-  this.route('addtodo')
+  this.route('add-todo')
   this.route('about')
 });

@@ -83,7 +83,7 @@
     }
   });
 });
-;define("todo-client/components/addtodo", ["exports", "@glimmer/component"], function (_exports, _component) {
+;define("todo-client/components/add-todo", ["exports", "@glimmer/component"], function (_exports, _component) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -108,7 +108,7 @@
   <button {{on "click" this.submit}}>Submit</button>
   <p>{{this.title}}</p>
   */
-  {"id":"NnxmnNJf","block":"{\"symbols\":[],\"statements\":[[2,\" \"],[10,\"span\"],[12],[2,\"Title\"],[13],[2,\"\\n\"],[8,\"input\",[],[[\"@value\"],[[32,0,[\"title\"]]]],null],[2,\"\\n\"],[11,\"button\"],[4,[38,0],[\"click\",[32,0,[\"submit\"]]],null],[12],[2,\"Submit\"],[13],[2,\"\\n\"],[10,\"p\"],[12],[1,[32,0,[\"title\"]]],[13]],\"hasEval\":false,\"upvars\":[\"on\"]}","meta":{"moduleName":"todo-client/components/addtodo.hbs"}});
+  {"id":"tcydNwN2","block":"{\"symbols\":[],\"statements\":[[2,\" \"],[10,\"span\"],[12],[2,\"Title\"],[13],[2,\"\\n\"],[8,\"input\",[],[[\"@value\"],[[32,0,[\"title\"]]]],null],[2,\"\\n\"],[11,\"button\"],[4,[38,0],[\"click\",[32,0,[\"submit\"]]],null],[12],[2,\"Submit\"],[13],[2,\"\\n\"],[10,\"p\"],[12],[1,[32,0,[\"title\"]]],[13]],\"hasEval\":false,\"upvars\":[\"on\"]}","meta":{"moduleName":"todo-client/components/add-todo.hbs"}});
 
   let AddtodoComponent = (_dec = Ember.inject.service, _dec2 = Ember._tracked, _dec3 = Ember._action, (_class = (_temp = class AddtodoComponent extends _component.default {
     constructor(...args) {
@@ -156,11 +156,11 @@
   /*
     <nav>
       <LinkTo @route="index" class="button">Todo</LinkTo>
-      <LinkTo @route="addtodo" class="button">Add Todo</LinkTo>
+      <LinkTo @route="add-todo" class="button">Add Todo</LinkTo>
       <LinkTo @route="about" class="button">About</LinkTo>
   </nav>
   */
-  {"id":"KCHFOjDe","block":"{\"symbols\":[],\"statements\":[[10,\"nav\"],[12],[2,\"\\n    \"],[8,\"link-to\",[[24,0,\"button\"]],[[\"@route\"],[\"index\"]],[[\"default\"],[{\"statements\":[[2,\"Todo\"]],\"parameters\":[]}]]],[2,\"\\n    \"],[8,\"link-to\",[[24,0,\"button\"]],[[\"@route\"],[\"addtodo\"]],[[\"default\"],[{\"statements\":[[2,\"Add Todo\"]],\"parameters\":[]}]]],[2,\"\\n    \"],[8,\"link-to\",[[24,0,\"button\"]],[[\"@route\"],[\"about\"]],[[\"default\"],[{\"statements\":[[2,\"About\"]],\"parameters\":[]}]]],[2,\"\\n\"],[13]],\"hasEval\":false,\"upvars\":[]}","meta":{"moduleName":"todo-client/components/nav-bar.hbs"}});
+  {"id":"xc7lZqTf","block":"{\"symbols\":[],\"statements\":[[10,\"nav\"],[12],[2,\"\\n    \"],[8,\"link-to\",[[24,0,\"button\"]],[[\"@route\"],[\"index\"]],[[\"default\"],[{\"statements\":[[2,\"Todo\"]],\"parameters\":[]}]]],[2,\"\\n    \"],[8,\"link-to\",[[24,0,\"button\"]],[[\"@route\"],[\"add-todo\"]],[[\"default\"],[{\"statements\":[[2,\"Add Todo\"]],\"parameters\":[]}]]],[2,\"\\n    \"],[8,\"link-to\",[[24,0,\"button\"]],[[\"@route\"],[\"about\"]],[[\"default\"],[{\"statements\":[[2,\"About\"]],\"parameters\":[]}]]],[2,\"\\n\"],[13]],\"hasEval\":false,\"upvars\":[]}","meta":{"moduleName":"todo-client/components/nav-bar.hbs"}});
 
   var _default = Ember._setComponentTemplate(__COLOCATED_TEMPLATE__, Ember._templateOnlyComponent());
 
@@ -446,7 +446,7 @@
     this.route('index', {
       path: "/"
     });
-    this.route('addtodo');
+    this.route('add-todo');
     this.route('about');
   });
 });
@@ -617,7 +617,7 @@
 
   _exports.default = _default;
 });
-;define("todo-client/templates/addtodo", ["exports"], function (_exports) {
+;define("todo-client/templates/add-todo", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -626,10 +626,10 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "hmZ0/vrP",
-    "block": "{\"symbols\":[],\"statements\":[[10,\"div\"],[14,0,\"add-todo\"],[12],[2,\"\\n    \"],[10,\"br\"],[12],[13],[2,\"\\n    \"],[10,\"br\"],[12],[13],[2,\"\\n    \"],[10,\"br\"],[12],[13],[2,\"\\n   \"],[8,\"addtodo\",[],[[],[]],null],[2,\"\\n\"],[13]],\"hasEval\":false,\"upvars\":[]}",
+    "id": "zwW1mo7K",
+    "block": "{\"symbols\":[],\"statements\":[[10,\"div\"],[14,0,\"add-todo\"],[12],[2,\"\\n    \"],[10,\"br\"],[12],[13],[2,\"\\n    \"],[10,\"br\"],[12],[13],[2,\"\\n    \"],[10,\"br\"],[12],[13],[2,\"\\n   \"],[8,\"add-todo\",[],[[],[]],null],[2,\"\\n\"],[13]],\"hasEval\":false,\"upvars\":[]}",
     "meta": {
-      "moduleName": "todo-client/templates/addtodo.hbs"
+      "moduleName": "todo-client/templates/add-todo.hbs"
     }
   });
 
@@ -746,7 +746,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("todo-client/app")["default"].create({"name":"todo-client","version":"0.0.0+d6a046e6"});
+            require("todo-client/app")["default"].create({"name":"todo-client","version":"0.0.0+addc728a"});
           }
         
 //# sourceMappingURL=todo-client.map
